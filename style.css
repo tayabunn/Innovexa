@@ -1,0 +1,51 @@
+body { font-family: 'DM Sans', sans-serif; }
+    h1,h2,h3,h4,h5,h6,.font-syne { font-family: 'Syne', sans-serif; }
+
+    /* Ticker animation */
+    .ticker-track { display:flex; width:max-content; animation:ticker 28s linear infinite; }
+    .ticker-track:hover { animation-play-state:paused; }
+    @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* Agency gradient text */
+    .agency-gradient {
+      font-family:'Syne',sans-serif;
+      background: linear-gradient(135deg, #93C5FD 0%, #3B82F6 50%, #1d4ed8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* FAQ accordion - CSS only */
+    .faq-cb { display:none; }
+    .faq-body { max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.3s ease; }
+    .faq-icon::before { content:'+'; }
+    .faq-cb:checked ~ label .faq-icon::before { content:'−'; }
+    .faq-cb:checked ~ label { color:#2563EB; }
+    .faq-cb:checked ~ label .faq-icon { background:#2563EB; border-color:#2563EB; color:#fff; }
+    .faq-cb:checked ~ .faq-body { max-height:300px; padding-bottom:1.25rem; }
+
+    /* FAQ tabs - CSS only */
+    .tab-rb { display:none; }
+    .tab-label { display:block; padding:0.45rem 1rem; border-radius:6px; font-size:0.875rem; font-weight:500; cursor:pointer; color:#6B7280; transition:background 0.15s,color 0.15s; }
+    .tab-label:hover { color:#111; background:#F3F4F6; }
+    .tab-rb:checked + .tab-label { background:#2563EB; color:#fff; }
+
+    /* Hamburger - CSS only */
+    #nav-toggle { display:none; }
+    .ham-bar { display:block; width:22px; height:2px; background:#374151; border-radius:2px; transition:transform 0.3s,opacity 0.3s; }
+    #nav-toggle:checked ~ div .mobile-nav { display:flex !important; }
+    #nav-toggle:checked ~ div label .ham-bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    #nav-toggle:checked ~ div label .ham-bar:nth-child(2) { opacity:0; }
+    #nav-toggle:checked ~ div label .ham-bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+    /* Fade up */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .fu  { animation:fadeUp 0.65s ease both; }
+    .d1  { animation-delay:0.1s; }
+    .d2  { animation-delay:0.22s; }
+    .d3  { animation-delay:0.34s; }
+
+    /* Nav underline hover */
+    .nav-link { position:relative; }
+    .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#2563EB; transition:width 0.2s; }
+    .nav-link:hover::after { width:100%; }

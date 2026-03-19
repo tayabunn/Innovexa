@@ -1,11 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovexa – Transforming Visions into Measurable Business Impact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+  <input type="checkbox" id="nav-toggle"/>
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Top bar -->
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M0.5 6.5L6.5 0.5L12.5 6.5L6.5 12.5L0.5 6.5Z" fill="white"/></svg>
+        </div>
+        <span class="font-syne font-bold text-lg text-gray-900">Innovexa</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-7">
+        <a href="#"        class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+        <a href="#about"   class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">About us</a>
+        <a href="#review"  class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Review</a>
+        <a href="#product" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Product</a>
+        <a href="#blog"    class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Blog</a>
+        <a href="#help"    class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Help</a>
+      </div>
+
+      <!-- Right actions -->
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden sm:block text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">Login</a>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-150">Register</a>
+        <!-- Hamburger label -->
+        <label for="nav-toggle" class="md:hidden flex flex-col gap-1.5 cursor-pointer p-1.5 rounded-lg hover:bg-gray-100 transition-colors">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-nav hidden flex-col pb-4 gap-1 border-t border-gray-100 pt-3">
+      <a href="#"        class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 border-b border-gray-100 transition-colors">Home</a>
+      <a href="#about"   class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 border-b border-gray-100 transition-colors">About us</a>
+      <a href="#review"  class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 border-b border-gray-100 transition-colors">Review</a>
+      <a href="#product" class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 border-b border-gray-100 transition-colors">Product</a>
+      <a href="#blog"    class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 border-b border-gray-100 transition-colors">Blog</a>
+      <a href="#help"    class="text-sm font-medium text-gray-700 hover:text-blue-600 py-2.5 transition-colors">Help</a>
+      <div class="flex gap-3 mt-3">
+        <a href="#" class="flex-1 text-center border border-gray-300 hover:border-blue-500 hover:text-blue-600 text-sm font-semibold py-2.5 rounded-lg transition-all">Login</a>
+        <a href="#" class="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 rounded-lg transition-all">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="pt-16 pb-10 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left -->
+      <div class="fu">
+        <h1 class="font-syne text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-5">
+          Transforming Visions into<br/>
+          <span class="text-blue-600">Measurable Business</span> Impact.
+        </h1>
+        <p class="text-gray-500 text-base leading-relaxed mb-8 max-w-md">
+          We are the strategic creative agency that designs powerful brands and delivers tailored digital solutions for sustainable growth.
+        </p>
+        <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-150 shadow-sm hover:shadow-md">
+          Start Your Project Today
+        </a>
+      </div>
+
+      <!-- Right – video placeholder -->
+      <div class="fu d2">
+        <div class="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center">
+          <div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-blue-200 transition-all duration-200">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="white"><path d="M1 1L17 10L1 19V1Z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── AGENCY BANNER ── -->
+    <div class="fu d3 mt-8 relative border border-gray-200 rounded-2xl overflow-hidden bg-white min-h-[200px]">
+
+      <!-- Giant AGENCY gradient bg text -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+        <span class="agency-gradient font-syne font-extrabold tracking-tighter opacity-20"
+              style="font-size:clamp(5rem,16vw,11rem);line-height:1;">AGENCY</span>
+      </div>
+
+      <!-- Content grid -->
+      <div class="relative z-10 grid grid-cols-1 sm:grid-cols-[180px_1fr_260px] min-h-[200px]">
+
+        <!-- Left: Business Solutions -->
+        <div class="p-6 border-b sm:border-b-0 sm:border-r border-gray-200 flex flex-col justify-start">
+          <p class="font-syne text-sm font-extrabold uppercase tracking-wide text-gray-900 leading-snug">
+            Business<br/><span class="text-blue-600">Solutions</span>
+          </p>
+        </div>
+
+        <!-- Centre: stats -->
+        <div class="p-6 flex items-center justify-center gap-10 border-b sm:border-b-0 sm:border-r border-gray-200">
+          <div class="text-center">
+            <p class="font-syne text-3xl font-extrabold text-gray-900">325+</p>
+            <p class="text-xs text-gray-400 font-medium mt-1">Branding</p>
+          </div>
+          <div class="text-center">
+            <p class="font-syne text-3xl font-extrabold text-gray-900">1200+</p>
+            <p class="text-xs text-gray-400 font-medium mt-1">Identity</p>
+          </div>
+        </div>
+
+        <!-- Right: two info cards -->
+        <div class="flex flex-col sm:flex-row sm:flex-col">
+          <div class="p-5 border-b border-gray-200 flex-1">
+            <p class="font-syne text-xs font-extrabold uppercase tracking-widest text-gray-900 mb-2">Digital Strategy &amp; Planning</p>
+            <p class="text-xs text-gray-400 leading-relaxed">We Define Clear Roadmaps And Actionable Strategies Powered By Market Data</p>
+          </div>
+          <div class="p-5 flex-1">
+            <p class="font-syne text-xs font-extrabold uppercase tracking-widest text-gray-900 mb-2">Performance Marketing</p>
+            <p class="text-xs text-gray-400 leading-relaxed">Our Campaigns Are Designed For Conversion. We Leverage Cutting-Edge Analytics</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════ TICKER ═══════════════ -->
+<div class="overflow-hidden bg-blue-600 py-3 my-6">
+  <div class="ticker-track">
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Brand Strategy <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Web Development <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Performance Marketing <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Data Analysis <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Digital Campaigns <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Brand Transformation <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Market Research <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Financial Modeling <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <!-- duplicate -->
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Brand Strategy <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Web Development <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Performance Marketing <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Data Analysis <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Digital Campaigns <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Brand Transformation <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Market Research <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+    <span class="flex items-center gap-3 px-8 text-white text-xs font-medium uppercase tracking-widest whitespace-nowrap">Financial Modeling <span class="w-1.5 h-1.5 rounded-full bg-white/40 inline-block"></span></span>
+  </div>
+</div>
+
+
+<!-- ═══════════════ STRATEGIC PARTNER ═══════════════ -->
+<section id="about" class="py-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left -->
+      <div>
+        <h2 class="font-syne text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-5">
+          Your Strategic Partner for<br/>
+          <span class="text-blue-600">Tangible Business Impact.</span>
+        </h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-8">
+          As a results-driven agency, we specialize in transforming market challenges into competitive advantages.
+        </p>
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+          <p class="font-syne text-sm font-bold text-gray-900 mb-4">Our Core Expertise: Solutions Built for Scale.</p>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Data-Driven Design</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Strategic Consulting</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Web Development</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Performance Marketing</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Content Strategy</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Brand Transformation</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Market Research</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 flex-shrink-0"></span>Financial Modeling</div>
+          </div>
+          <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-150">Start Consultation</a>
+        </div>
+      </div>
+
+      <!-- Right decorative -->
+      <div class="relative flex items-center justify-center py-10 min-h-[300px]">
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+          <span class="font-syne font-extrabold tracking-tighter text-gray-100" style="font-size:clamp(5rem,13vw,9rem);line-height:1;">AGENCY</span>
+        </div>
+        <div class="relative z-10 grid grid-cols-2 gap-4 w-64">
+          <div class="bg-white rounded-2xl shadow-md p-4 border border-gray-100 hover:shadow-lg transition-shadow">
+            <div class="w-full h-24 bg-gray-100 rounded-xl mb-3"></div>
+            <div class="h-2.5 bg-gray-200 rounded w-3/4 mb-1.5"></div>
+            <div class="h-2 bg-gray-100 rounded w-1/2"></div>
+          </div>
+          <div class="bg-white rounded-2xl shadow-md p-4 border border-blue-100 hover:shadow-lg transition-shadow">
+            <div class="w-full h-24 bg-blue-50 rounded-xl mb-3"></div>
+            <div class="h-2.5 bg-blue-100 rounded w-3/4 mb-1.5"></div>
+            <div class="h-2 bg-blue-50 rounded w-1/2"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ SERVICES ═══════════════ -->
+<section id="product" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <h2 class="font-syne text-4xl font-extrabold tracking-tight mb-4">Our Service for Measurable Growth.</h2>
+      <p class="text-gray-500 text-sm leading-relaxed max-w-xl mx-auto">
+        We are a results-driven agency committed to building tailored, high-impact strategies. Our experienced professionals provide end-to-end solutions designed to guarantee your competitive edge.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="bg-white border border-gray-200 rounded-2xl p-7 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-50 transition-all duration-200 cursor-default">
+        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+          <svg width="22" height="22" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="font-syne font-bold text-sm text-gray-900 mb-2">Strategic Consulting</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Define clear roadmaps and actionable strategies powered by market data for maximum ROI.</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl p-7 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-50 transition-all duration-200 cursor-default">
+        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+          <svg width="22" height="22" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-syne font-bold text-sm text-gray-900 mb-2">Performance Marketing</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Campaigns designed for conversion, leveraging advanced analytics to optimize spending.</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl p-7 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-50 transition-all duration-200 cursor-default">
+        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+          <svg width="22" height="22" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 class="font-syne font-bold text-sm text-gray-900 mb-2">Web &amp; App Development</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Building scalable, secure digital platforms optimized for user experience and future growth.</p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl p-7 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-50 transition-all duration-200 cursor-default">
+        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+          <svg width="22" height="22" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+        <h3 class="font-syne font-bold text-sm text-gray-900 mb-2">Data Analysis &amp; Insights</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Transforming complex data into clear, competitive intelligence to drive better decisions.</p>
+      </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="#" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-150 shadow-sm hover:shadow-md">Explore Our Service</a>
+      <a href="#" class="border border-gray-300 hover:border-blue-500 hover:text-blue-600 text-gray-800 font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-150">View Our Portfolio</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════ ELEVATE BANNER ═══════════════ -->
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="bg-blue-600 rounded-2xl px-10 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h2 class="font-syne text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight">
+          Let's Elevate Your Brand<br/>to the Next Level !
+        </h2>
+        <a href="#" class="mt-6 inline-block border border-white/40 hover:border-white hover:bg-white/10 active:scale-95 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-all duration-150">Start a Project</a>
+      </div>
+      <div class="flex gap-10 md:gap-14 text-white text-center flex-shrink-0 flex-wrap justify-center">
+        <div>
+          <p class="font-syne text-4xl font-extrabold">80+</p>
+          <p class="text-xs text-white/70 mt-1 font-medium">Happy Clients</p>
+        </div>
+        <div>
+          <p class="font-syne text-4xl font-extrabold">12+</p>
+          <p class="text-xs text-white/70 mt-1 font-medium">Years Experience</p>
+        </div>
+        <div>
+          <p class="font-syne text-4xl font-extrabold">500+</p>
+          <p class="text-xs text-white/70 mt-1 font-medium">Projects Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ WE BUILD BRANDS ═══════════════ -->
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <h2 class="font-syne text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-5">
+          We Build Brands That<br/>
+          <span class="text-blue-600">People Remember.</span>
+        </h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-10">
+          We're a full-service creative agency combining strategy, design, and technology to help businesses grow. From brand identity to digital campaigns.
+        </p>
+
+        <div class="space-y-7">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="18" height="18" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h4 class="font-syne font-bold text-sm mb-1">Brand Strategy &amp; Identity</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Build a strong brand foundation with creative strategy, identity design, and market positioning that set you apart.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="18" height="18" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div>
+              <h4 class="font-syne font-bold text-sm mb-1">Digital Product Design</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">From wireframes to launch, we craft modern, user-friendly interfaces that engage and convert audiences.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="18" height="18" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <h4 class="font-syne font-bold text-sm mb-1">Marketing &amp; Growth</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Drive awareness with targeted campaigns, social media, and data-driven performance marketing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Person illustration -->
+      <div class="flex justify-center">
+        <div class="relative w-72">
+          <div class="w-full h-96 bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl overflow-hidden flex items-end justify-center">
+            <svg viewBox="0 0 200 280" width="155" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="100" cy="62" rx="38" ry="40" fill="#C7C7C7"/>
+              <path d="M18 280 Q18 170 100 152 Q182 170 182 280Z" fill="#C7C7C7"/>
+            </svg>
+          </div>
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-5 py-2 rounded-full whitespace-nowrap shadow-lg font-syne">
+            Full-Service Creative Agency
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ TEAM ═══════════════ -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <h2 class="font-syne text-4xl font-extrabold tracking-tight mb-4">Meet Our Expert Team</h2>
+      <p class="text-gray-500 text-sm leading-relaxed max-w-md mx-auto">
+        Behind every great brand is a great team. Our professionals bring years of experience, creativity, and innovation to every project.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gray-200 flex items-end justify-center">
+          <svg viewBox="0 0 120 150" width="80" fill="none">
+            <ellipse cx="60" cy="46" rx="24" ry="26" fill="#C7C7C7"/>
+            <path d="M8 150 Q8 95 60 82 Q112 95 112 150Z" fill="#C7C7C7"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <div class="h-3 bg-gray-200 rounded w-3/4 mb-2"></div>
+          <div class="h-2 bg-gray-100 rounded w-1/2"></div>
+        </div>
+      </div>
+
+      <!-- Card 2 – featured -->
+      <div class="rounded-2xl overflow-hidden bg-blue-600 shadow-lg shadow-blue-200">
+        <div class="h-48 bg-blue-500 flex items-end justify-center">
+          <svg viewBox="0 0 120 150" width="80" fill="none">
+            <ellipse cx="60" cy="46" rx="24" ry="26" fill="#93C5FD"/>
+            <path d="M8 150 Q8 95 60 82 Q112 95 112 150Z" fill="#93C5FD"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <h4 class="font-syne font-bold text-white text-sm">Migel Carlosa</h4>
+          <p class="text-blue-200 text-xs mt-1 mb-2">Technology Director</p>
+          <p class="text-blue-100 text-xs leading-relaxed">Migel bridges creativity and technology to deliver seamless digital experiences across platforms.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="h-48 bg-gray-200 flex items-end justify-center">
+          <svg viewBox="0 0 120 150" width="80" fill="none">
+            <ellipse cx="60" cy="46" rx="24" ry="26" fill="#C7C7C7"/>
+            <path d="M8 150 Q8 95 60 82 Q112 95 112 150Z" fill="#C7C7C7"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <div class="h-3 bg-gray-200 rounded w-3/4 mb-2"></div>
+          <div class="h-2 bg-gray-100 rounded w-1/2"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="flex justify-center items-center gap-2 mt-8">
+      <span class="w-6 h-2 bg-blue-600 rounded-full inline-block"></span>
+      <span class="w-2 h-2 bg-gray-300 rounded-full inline-block"></span>
+      <span class="w-2 h-2 bg-gray-300 rounded-full inline-block"></span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section id="help" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-14">
+      <h2 class="font-syne text-4xl font-extrabold tracking-tight mb-3">Frequently Asked Question</h2>
+      <p class="text-gray-500 text-sm">Have a question? We're here to help and make things clear.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-[240px_1fr] gap-12">
+
+      <!-- Sidebar tabs -->
+      <div>
+        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Table of Content</p>
+        <input type="radio" name="faq-tab" id="tab-general" class="tab-rb" checked/>
+        <label for="tab-general" class="tab-label">General</label>
+        <input type="radio" name="faq-tab" id="tab-trust" class="tab-rb"/>
+        <label for="tab-trust" class="tab-label">Trust &amp; Safety</label>
+        <input type="radio" name="faq-tab" id="tab-service" class="tab-rb"/>
+        <label for="tab-service" class="tab-label">Service</label>
+        <input type="radio" name="faq-tab" id="tab-billing" class="tab-rb"/>
+        <label for="tab-billing" class="tab-label">Billing</label>
+        <input type="radio" name="faq-tab" id="tab-office" class="tab-rb"/>
+        <label for="tab-office" class="tab-label">Office Operation</label>
+      </div>
+
+      <!-- Accordion -->
+      <div>
+
+        <div class="border-b border-gray-200">
+          <input type="checkbox" id="faq1" class="faq-cb"/>
+          <label for="faq1" class="flex justify-between items-center gap-4 py-5 cursor-pointer text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm select-none">
+            <span>What type of clients do you work with?</span>
+            <span class="faq-icon w-7 h-7 flex-shrink-0 border border-gray-300 rounded-lg flex items-center justify-center text-base text-gray-500 transition-all duration-200"></span>
+          </label>
+          <div class="faq-body text-gray-500 text-sm leading-relaxed">
+            We work with startups, SMEs, and enterprise clients across tech, retail, finance, and healthcare. Our approach is carefully tailored to each client's unique goals and market context.
+          </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+          <input type="checkbox" id="faq2" class="faq-cb"/>
+          <label for="faq2" class="flex justify-between items-center gap-4 py-5 cursor-pointer text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm select-none">
+            <span>How long does a typical project take?</span>
+            <span class="faq-icon w-7 h-7 flex-shrink-0 border border-gray-300 rounded-lg flex items-center justify-center text-base text-gray-500 transition-all duration-200"></span>
+          </label>
+          <div class="faq-body text-gray-500 text-sm leading-relaxed">
+            Timelines vary by scope. A branding project typically takes 4–6 weeks, while a full web development engagement may take 8–16 weeks. We provide a detailed timeline during the consultation phase.
+          </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+          <input type="checkbox" id="faq3" class="faq-cb" checked/>
+          <label for="faq3" class="flex justify-between items-center gap-4 py-5 cursor-pointer text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm select-none">
+            <span>What makes your agency different?</span>
+            <span class="faq-icon w-7 h-7 flex-shrink-0 border border-gray-300 rounded-lg flex items-center justify-center text-base text-gray-500 transition-all duration-200"></span>
+          </label>
+          <div class="faq-body text-gray-500 text-sm leading-relaxed">
+            Our agency blends creativity, data-driven strategy, and technology to deliver measurable results. Every project is approached with personalized attention to detail and long-term impact.
+          </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+          <input type="checkbox" id="faq4" class="faq-cb"/>
+          <label for="faq4" class="flex justify-between items-center gap-4 py-5 cursor-pointer text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm select-none">
+            <span>Do you offer post-project support?</span>
+            <span class="faq-icon w-7 h-7 flex-shrink-0 border border-gray-300 rounded-lg flex items-center justify-center text-base text-gray-500 transition-all duration-200"></span>
+          </label>
+          <div class="faq-body text-gray-500 text-sm leading-relaxed">
+            Yes! We offer ongoing retainer packages and post-launch support to ensure your brand and digital products continue to perform at their highest level.
+          </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+          <input type="checkbox" id="faq5" class="faq-cb"/>
+          <label for="faq5" class="flex justify-between items-center gap-4 py-5 cursor-pointer text-gray-900 hover:text-blue-600 transition-colors font-medium text-sm select-none">
+            <span>How can we start working together?</span>
+            <span class="faq-icon w-7 h-7 flex-shrink-0 border border-gray-300 rounded-lg flex items-center justify-center text-base text-gray-500 transition-all duration-200"></span>
+          </label>
+          <div class="faq-body text-gray-500 text-sm leading-relaxed">
+            Simply reach out via our contact form or email us at hello@innovexa.co. We'll schedule a discovery call to understand your goals and propose the best path forward.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="bg-gray-950 text-white">
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
+
+    <!-- Top -->
+    <div class="grid lg:grid-cols-2 gap-12 pb-12 border-b border-white/5">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M0.5 6.5L6.5 0.5L12.5 6.5L6.5 12.5L0.5 6.5Z" fill="white"/></svg>
+          </div>
+          <span class="font-syne font-bold text-base text-white">Innovexa Agency</span>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+          Innovexa is a creative and strategic digital agency helping businesses grow through design, branding, and technology. We build experiences that inspire and empower brands.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-syne font-bold text-white mb-2">Stay in the Loop</h4>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+          Join our newsletter for agency insights, trend updates, and latest innovations.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <input type="email" placeholder="Enter your email"
+                 class="flex-1 min-w-[180px] bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none text-white text-sm placeholder-gray-600 px-4 py-2.5 rounded-lg transition-colors"/>
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-150 whitespace-nowrap">Subscribe</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-white/5">
+      <div>
+        <h5 class="font-syne font-bold text-sm text-white mb-4">Company</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">About Innovexa</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Our Vision</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Join the Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-syne font-bold text-sm text-white mb-4">Services</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Brand Identity</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Web &amp; App Development</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Digital Campaigns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-syne font-bold text-sm text-white mb-4">Resources</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Case Studies</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Insights Blog</a></li>
+          <li><a href="#" class="text-gray-500 text-sm hover:text-white transition-colors">Press Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-syne font-bold text-sm text-white mb-4">Contact Us</h5>
+        <ul class="space-y-2.5">
+          <li class="text-gray-500 text-sm">hello@innovexa.co</li>
+          <li class="text-gray-500 text-sm">+62 812 3456 7890</li>
+          <li class="text-gray-500 text-sm">Jakarta, Indonesia</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Big brand text -->
+    <div class="py-6 overflow-hidden">
+      <p class="font-syne font-extrabold text-center tracking-tighter text-white/5 select-none"
+         style="font-size:clamp(3.5rem,14vw,11rem);line-height:1;">INNOVEXA</p>
+    </div>
+
+    <div class="text-center text-gray-700 text-xs pt-4 border-t border-white/5">
+      © 2025 Innovexa Agency. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
 </body>
 </html>
