@@ -1,4 +1,5 @@
- tailwind.config = {
+ <script>
+    tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
@@ -17,3 +18,4 @@
         }
       }
     }
+  </script>
