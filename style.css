@@ -1,90 +1,166 @@
 
-    /* Gradient text — no Tailwind equivalent */
-    .grad-text {
-      background: linear-gradient(135deg, #fff 0%, #2563EB 55%, #60A5FA 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+.grad-text {
+  background: linear-gradient(135deg, #ffffff 0%, #2563eb 55%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-    /* ── Scroll-driven fade-up reveal (no JS) ── */
-    @supports (animation-timeline: view()) {
-      .reveal {
-        animation: fadeUp linear both;
-        animation-timeline: view();
-        animation-range: entry 0% entry 25%;
-      }
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+}
 
-    /* ── Mobile menu: checkbox peer trick ── */
-    #nav-toggle { display: none; }
-    #mob-menu {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height .4s ease, opacity .3s ease;
-    }
-    #nav-toggle:checked ~ #mob-menu {
-      max-height: 500px;
-      opacity: 1;
-    }
-    /* Hamburger ↔ X icon swap */
-    #nav-toggle:checked ~ label .icon-open  { display: none; }
-    #nav-toggle:checked ~ label .icon-close { display: block; }
-    .icon-close { display: none; }
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 25%;
+  }
+}
 
-    /* ── FAQ: <details> / <summary> ── */
-    details summary { list-style: none; cursor: pointer; }
-    details summary::-webkit-details-marker { display: none; }
-    details .faq-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .4s ease;
-    }
-    details[open] .faq-body { max-height: 300px; }
-    details[open] .faq-icon { transform: rotate(45deg); }
-    .faq-icon { transition: transform .3s ease; }
-    details[open] { border-color: #2563EB !important; }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-    /* ── FAQ tabs: radio + sibling CSS ── */
-    .tab-radio { display: none; }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* default: all panels hidden */
-    #panel-general, #panel-trust, #panel-service, #panel-billing, #panel-office { display: none; }
-    #tab-general:checked  ~ .faq-panels #panel-general  { display: block; }
-    #tab-trust:checked    ~ .faq-panels #panel-trust    { display: block; }
-    #tab-service:checked  ~ .faq-panels #panel-service  { display: block; }
-    #tab-billing:checked  ~ .faq-panels #panel-billing  { display: block; }
-    #tab-office:checked   ~ .faq-panels #panel-office   { display: block; }
 
-    /* active tab label styles */
-    .tab-label {
-      background: #16161E;
-      border: 1px solid #1E1E2A;
-      color: #9CA3AF;
-      transition: all .2s;
-      cursor: pointer;
-    }
-    .tab-label:hover { color: #fff; }
-    #tab-general:checked  ~ .tab-labels label[for="tab-general"],
-    #tab-trust:checked    ~ .tab-labels label[for="tab-trust"],
-    #tab-service:checked  ~ .tab-labels label[for="tab-service"],
-    #tab-billing:checked  ~ .tab-labels label[for="tab-billing"],
-    #tab-office:checked   ~ .tab-labels label[for="tab-office"] {
-      background: #2563EB;
-      border-color: #2563EB;
-      color: #fff;
-    }
+#nav-toggle {
+  display: none;
+}
 
-    /* ── Subscribe: CSS-only feedback ──
-       Show "✓" state when input is valid (has value, not empty) */
-    .subscribe-wrapper input:not(:placeholder-shown):valid ~ button .btn-default { display: none; }
-    .subscribe-wrapper input:not(:placeholder-shown):valid ~ button .btn-success { display: inline; }
-    .subscribe-wrapper input:placeholder-shown ~ button .btn-success { display: none; }
-    .subscribe-wrapper input:not(:placeholder-shown):valid ~ button {
-      background: #16A34A;
-    }
+#mob-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+#nav-toggle:checked ~ #mob-menu {
+  max-height: 500px;
+  opacity: 1;
+}
+
+
+#nav-toggle:checked ~ label .icon-open {
+  display: none;
+}
+
+#nav-toggle:checked ~ label .icon-close {
+  display: block;
+}
+
+.icon-close {
+  display: none;
+}
+
+/* FAQ section */
+details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details .faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+details[open] .faq-body {
+  max-height: 300px;
+}
+
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+details[open] {
+  border-color: #2563eb !important;
+}
+
+/* FAQ tabs */
+.tab-radio {
+  display: none;
+}
+
+#panel-general,
+#panel-trust,
+#panel-service,
+#panel-billing,
+#panel-office {
+  display: none;
+}
+
+#tab-general:checked ~ .faq-panels #panel-general {
+  display: block;
+}
+
+#tab-trust:checked ~ .faq-panels #panel-trust {
+  display: block;
+}
+
+#tab-service:checked ~ .faq-panels #panel-service {
+  display: block;
+}
+
+#tab-billing:checked ~ .faq-panels #panel-billing {
+  display: block;
+}
+
+#tab-office:checked ~ .faq-panels #panel-office {
+  display: block;
+}
+
+.tab-label {
+  background: #16161e;
+  border: 1px solid #1e1e2a;
+  color: #9ca3af;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tab-label:hover {
+  color: #ffffff;
+}
+
+#tab-general:checked ~ .tab-labels label[for="tab-general"],
+#tab-trust:checked ~ .tab-labels label[for="tab-trust"],
+#tab-service:checked ~ .tab-labels label[for="tab-service"],
+#tab-billing:checked ~ .tab-labels label[for="tab-billing"],
+#tab-office:checked ~ .tab-labels label[for="tab-office"] {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+
+.subscribe-wrapper input:not(:placeholder-shown):valid ~ button .btn-default {
+  display: none;
+}
+
+.subscribe-wrapper input:not(:placeholder-shown):valid ~ button .btn-success {
+  display: inline;
+}
+
+.subscribe-wrapper input:placeholder-shown ~ button .btn-success {
+  display: none;
+}
+
+.subscribe-wrapper input:not(:placeholder-shown):valid ~ button {
+  background: #16a34a;
+}
